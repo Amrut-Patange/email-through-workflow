@@ -38,7 +38,7 @@ jobs:
               days_old=0
             fi 
 
-            if [ $days_old -ge 4 ]; then  # Only select branches older than 4 days
+            if [ $days_old -ge 0 ]; then  # Only select branches older than 4 days
               old_branches+=("$branch_name, Days Old: $days_old, Last Author: $last_author")
               branch_details+="$branch_name - Days Old: $days_old - Last Author: $last_author\n"
             fi
